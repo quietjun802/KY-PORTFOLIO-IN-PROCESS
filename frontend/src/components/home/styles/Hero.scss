@@ -1,1 +1,18 @@
-//레이아웃에 대한 정의
+.inner.hero-inner{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    width: 90%;
+    p.txt {
+        position: absolute;
+        text-align: right;
+        right: 2rem;
+        bottom: 10rem;
+    }
+    .arrow {
+        position: absolute;
+        bottom: 3rem;
+        left: calc(50% - 1.5rem);
+        animation: up 1s infinite alternate ease-in-out;
+    }
+}
