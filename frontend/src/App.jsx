@@ -1,4 +1,3 @@
-
 import './App.css'
 import { Routes, Route } from 'react-router-dom'
 import Home from "./pages/Home"
@@ -10,16 +9,28 @@ import RequireAuth from './routes/RequireAuth';
 import "./styles/main.scss"
 import "./styles/_themes.scss"
 import './styles/common.scss'
-function App() {
+import "./components/home/styles/Hero.scss";
+import { ThemeProvider, useTheme } from './context/ThemeContext'
 
+function ThemeToggleButton() {
+  const { theme, toggleTheme } = useTheme()
   return (
-    <Routes>
-      <Route path='/' element={<Home />} />
-      <Route path="/admin/login" element={<AuthRedirectRoute Component={AdminLogin} />} />
+    <button className="theme-toggle" onClick={toggleTheme}>
+      {theme === "light" ? "Dark" : "Light"}
+    </button>
+  )
+}
 
-      <Route path="/admin/post" element={<RequireAuth Component={AdminPost} />} />
-      <Route path='*' element={<Notfound />} />
-    </Routes>
+function App() {
+  return (
+    <ThemeProvider>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path="/admin/login" element={<AuthRedirectRoute Component={AdminLogin} />} />
+        <Route path="/admin/post" element={<RequireAuth Component={AdminPost} />} />
+        <Route path='*' element={<Notfound />} />
+      </Routes>
+    </ThemeProvider>
   )
 }
 

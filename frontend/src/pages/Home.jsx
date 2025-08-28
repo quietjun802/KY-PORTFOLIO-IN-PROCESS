@@ -5,7 +5,10 @@ import Header from '../components/home/Header'
 import Work from '../components/home/Work'
 import Contact from '../components/home/Contact'
 import Footer from '../components/home/Footer'
+import { useTheme } from '../context/ThemeContext'
 const Home = () => {
+
+  const {theme,toggleTheme}=useTheme()
   return (
     <div>
       <Header />
