@@ -23,7 +23,7 @@ header ,section{
             text-transform: uppercase;
         }
         h1.tit {
-            font-size: clamp(6rem ,8vw,16rem);
+            font-size: clamp(6rem ,7vw,16rem);
             font-weight: 900;
             text-transform: uppercase;
             line-height: .9;
@@ -37,8 +37,18 @@ header ,section{
         }
         p.txt{
             // 글꼴 정의
-            font-size: clamp(2rem,2vw,2.8rem);
+            font-size: clamp(2rem,1vw,2.8rem);
             color: var(--gray600);
+        }
+        h2.sub-tit {
+            font-size: 7rem;
+            font-weight: 800;
+        }
+        h4.list-lst{
+            font-size: 2rem;
+            font-weight: 700;
+            border-bottom: .1rem solid var(--gray300);
+            line-height: 2;
         }
     }
 }

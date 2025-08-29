@@ -1,8 +1,8 @@
 /* 라이트/다크 공통 변수 정의 */
 $light: (
-  bg: #ffffff,
-  text: #111827,
-  primary: #1ce23d,
+  bg: #fcfcfc,
+  text: #0f0f0f,
+  primary: #47FF97,
   underline:#d8d8d8,
   // Gray Tones
   gray100: #f9fafb,
@@ -17,11 +17,11 @@ $light: (
 );
 
 $dark: (
-  bg: #0b1220,
+  bg: #0c0c0c,
   text: #f0f0f0,
-  primary: #48ff66,
+  primary: #47FF97,
   underline:#2b2b2b,
-  gray100: #1a1a1a,
+  gray100: #131313,
   gray200: #222222,
   gray300: #2f2f2f,
   gray400: #3d3d3d,
@@ -31,7 +31,6 @@ $dark: (
   gray800: #d4d4d4,
   gray900: #f5f5f5
 );
-
 
 :root {
   @each $k, $v in $light {

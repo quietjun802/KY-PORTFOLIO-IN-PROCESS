@@ -12,6 +12,7 @@ import './styles/common.scss'
 import "./components/home/styles/Hero.scss";
 import { ThemeProvider, useTheme } from './context/ThemeContext'
 
+
 function ThemeToggleButton() {
   const { theme, toggleTheme } = useTheme()
   return (
