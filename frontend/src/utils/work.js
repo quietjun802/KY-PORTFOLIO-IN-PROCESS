@@ -1,7 +1,4 @@
-import p1 from "../assets/img/p-1.webp";
-import p2 from "../assets/img/p-2.webp";
-import p3 from "../assets/img/p-3.webp";
-
+// src/data/works.js
 const img = (path) => `/img/${path}`;
 const works = [
   {
@@ -11,7 +8,7 @@ const works = [
     description:
       "React + Vite 기반의 SNS 통계/알림을 한눈에 보는 대시보드. 카드/차트/필터 컴포넌트로 모듈화.",
     tags: ["REACT", "RESPONSIVE", "DASHBOARD", "CHART", "CLEANUI"],
-    thumbnail: img("p-1.png"),
+    thumbnail: img("p-1.webp"),
     // 선택: 상세 보기용
     period: "2025.07 ~ 2025.08",
     role: "Front-end",
@@ -28,7 +25,7 @@ const works = [
     description:
       "상세 필터·정렬·페이지네이션을 제공하는 상품 갤러리. 접근성 고려한 키보드 네비게이션 적용.",
     tags: ["REACT", "RESPONSIVE", "FILTER", "PAGINATION", "ACCESSIBILITY"],
-    thumbnail: img("p-2.png"),
+    thumbnail: img("p-2.webp"),
     period: "2025.06",
     role: "Front-end",
     stack: ["React", "Vite", "React Router"],
@@ -44,7 +41,7 @@ const works = [
     description:
       "관리자에서 Works 항목을 생성/수정/삭제하는 SPA. 목데이터로부터 CRUD UX 설계.",
     tags: ["REACT", "CRUD", "ADMIN", "FORM", "VALIDATION"],
-    thumbnail: img("p-3.png"),
+    thumbnail: img("p-3.webp"),
 
     period: "2025.05",
     role: "Full-stack(미니)",
@@ -61,7 +58,7 @@ const works = [
     description:
       "React + Vite 기반의 SNS 통계/알림을 한눈에 보는 대시보드. 카드/차트/필터 컴포넌트로 모듈화.",
     tags: ["REACT", "RESPONSIVE", "DASHBOARD", "CHART", "CLEANUI"],
-    thumbnail: img("p-1.png"),
+    thumbnail: img("p-1.webp"),
     // 선택: 상세 보기용
     period: "2025.07 ~ 2025.08",
     role: "Front-end",
@@ -78,7 +75,7 @@ const works = [
     description:
       "상세 필터·정렬·페이지네이션을 제공하는 상품 갤러리. 접근성 고려한 키보드 네비게이션 적용.",
     tags: ["REACT", "RESPONSIVE", "FILTER", "PAGINATION", "ACCESSIBILITY"],
-    thumbnail: img("p-2.png"),
+    thumbnail: img("p-2.webp"),
     period: "2025.06",
     role: "Front-end",
     stack: ["React", "Vite", "React Router"],
@@ -94,7 +91,7 @@ const works = [
     description:
       "관리자에서 Works 항목을 생성/수정/삭제하는 SPA. 목데이터로부터 CRUD UX 설계.",
     tags: ["REACT", "CRUD", "ADMIN", "FORM", "VALIDATION"],
-    thumbnail: img("p-3.png"),
+    thumbnail: img("p-3.webp"),
 
     period: "2025.05",
     role: "Full-stack(미니)",
