@@ -1,38 +1,29 @@
 import React from 'react'
+import works from '../../utils/work'
 import "./styles/Work.scss"
-import { works } from '../../utils/work'
-
 const Work = () => {
   return (
-    <div className="work-inner">
-      <h1 className="tit">WORKS.</h1>
-      <ul className="lst">
-        {works.map((item) => (
-          <li key={item.id}>
-            {/* 텍스트 블록 */}
-            <a href={item.links.demo} target="_blank" rel="noopener noreferrer" className="t-wrap">
-              <h4 className="list-lst">{item.title}</h4>
-              <p className="txt">{item.subtitle}</p>
-              <p className="txt">{item.description}</p>
-              <div className="hash-wrap">
-                {item.tags.map((tag, i) => (
-                  <span key={i} className="hash">#{tag}</span>
-                ))}
-              </div>
+    <div className='inner work-inner'>
+      <h3 className='sub-tit-2'>works.</h3>
+      <ul className="work-lst">
+        {works.map((work)=>(
+          <li key={work.id}>
+            <a href={work.links.notion} className='lst-t-wrap'>
+            <h4 className="lst-tit">
+              {work.title}
+            </h4>
+            <div className="tags">
+              {work.tags.map((t,i)=>(
+                <span key={i}>{t}</span>
+              ))}
+            </div>
             </a>
-
-            {/* 이미지 블록 → public/img 경로 직접 사용 */}
-<a 
-  href={item.links.demo} 
-  target="_blank" 
-  rel="noopener noreferrer" 
-  className="img-wrap"
->
-  <img 
-    src={item.thumbnail.replace(".png", ".webp")} 
-    alt={item.title} 
-  />
-</a>
+            <a href={work.links.demo} className="lst-img-wrap">
+              <div 
+              className="bg"
+              style={{backgroundImage:`url(${work.thumbnail})`}}
+              ></div>
+            </a>
           </li>
         ))}
       </ul>

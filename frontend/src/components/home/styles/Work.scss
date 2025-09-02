@@ -1,82 +1,21 @@
-.work-inner {
-  width: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 80px 0;
-
-  .tit {
-    font-size: 48px;
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: 80px;
-    letter-spacing: 0.25em;
-    transition: color 0.3s ease;
-    color: var(--text); // 라이트/다크 테마에 따라 바뀜
-  }
-
-  .lst {
+.inner.work-inner{
+  
+  .work-lst{
     display: flex;
     flex-direction: column;
-    gap: 54px;
-
-    li {
+    gap: 5.4rem;
+    >li{
       display: flex;
-      width: 1440px;
-      height: 361px;
-
-      // 왼쪽 텍스트 영역 (961px 고정)
-      .t-wrap {
-        width: 961px;
-        padding: 40px 50px;
-        background: #000;   // 항상 검정
-        color: #fff;        // 항상 흰색
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-
-        .list-lst {
-          font-size: 24px;
-          font-weight: 600;
-          margin-bottom: 16px;
-        }
-
-        .txt {
-          font-size: 14px;
-          line-height: 1.6;
-          margin-bottom: 16px;
-          opacity: 0.9;
-        }
-
-        .hash-wrap {
-          display: flex;
-          flex-wrap: wrap;
-          gap: 8px;
-
-          .hash {
-            font-size: 12px;
-            padding: 6px 14px;
-            background: #fff;   // 버튼은 흰색 고정
-            color: #000;        // 글씨는 검정 고정
-            border-radius: 20px;
-            font-weight: 600;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-          }
-        }
-      }
-
-      // 오른쪽 이미지 영역 (479x361 고정)
-      .img-wrap {
-        width: 479px;
-        height: 361px;
-        background: #ddd;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        img {
+      .lst-img-wrap{
+        width: 48rem;
+        height: 36rem;
+        display: block;
+        .bg{
           width: 100%;
           height: 100%;
-          object-fit: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
         }
       }
     }
