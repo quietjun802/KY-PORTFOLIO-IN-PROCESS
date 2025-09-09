@@ -31,6 +31,24 @@ header {
     &.is-open {
         .inner {
             .right-wrap {
+                .mob-nav-btn {
+                    sapn:nth-child(1) {
+                        transform: rotate(45deg);
+                        top: 1.1rem;
+                    }
+
+                    sapn:nth-child(2) {
+                        transform: translateX(100%);
+                        opacity: 0;
+                    }
+
+                    sapn:nth-child(3) {
+                        transform: rotate(-45deg);
+                        top: 1.1rem;
+                    }
+
+                }
+
                 nav ul {
                     right: 0;
                 }
