@@ -85,7 +85,7 @@ const Contact = () => {
                   value={formData.phone}
                   onChange={handleChange}
                   required
-                  type="tel" placeholder='010-1234-5678s' />
+                  type="tel" placeholder='010-1234-5678' />
               </div>
             </li>
             <li>
