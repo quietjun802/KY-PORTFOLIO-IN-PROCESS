@@ -61,7 +61,7 @@ const Contact = () => {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  placeholder='홍길동' />
+                  placeholder='조용준' />
               </div>
             </li>
             <li>
@@ -73,7 +73,7 @@ const Contact = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  type="email" placeholder='example@naver.com' />
+                  type="email" placeholder='zjyj802@naver.com' />
               </div>
             </li>
             <li>
@@ -85,7 +85,7 @@ const Contact = () => {
                   value={formData.phone}
                   onChange={handleChange}
                   required
-                  type="tel" placeholder='010-1234-5678' />
+                  type="tel" placeholder='010-2463-0318' />
               </div>
             </li>
             <li>
