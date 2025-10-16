@@ -14,8 +14,8 @@ const works = [
     role: "Front-end",
     stack: ["React", "Vite", "Zustand", "Recharts"],
     links: {
-      demo: "https://example.com/demo1",
-      notion: "https://notion.com/you/demo1",
+      demo: "https://https://github.com/quietjun802/KY_TOCOBO-IN-PROCESS/demo1",
+      notion: "https://https://www.notion.so/TOCOBO-272f8f48641e80f5a335d33ff5a2ddb2?source=copy_link/you/demo1",
     },
   },
   {
